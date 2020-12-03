@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+a{
+    color: inherit;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+header > a {
+    display: block;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.ano {
+    font-style: italic;
+    display: block;
+    color: darkgray
+}
+
+[class*= "-item"] {
+    background-color: rgba(61, 61, 65, 0.2);
+    border-radius: 32px;
+    margin-bottom: 16px;
+    padding: 24px;
+    text-transform: none ;
+}
+
+[class*="-item"]:first-child {
+    background-color: rgba(245, 155, 10, 0.2);
+  }
+  
+[class*="-item"]:last-child {
+    background-color: rgba(245, 155, 10, 0.2);
+  }
