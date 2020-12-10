@@ -1,5 +1,14 @@
+:root{
+    --primaria:rgb(1, 0, 15) ;
+    --bg1: #c4f5f8;
+    --bg2: rgba(0,0,0,.2)
+    --bg3: ;
+    --padding: 24px ;
+}
+    
 *{
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     margin: 0;
     padding: 0;
@@ -12,15 +21,80 @@ a{
     text-decoration: underline;
 }
 
+h1{
+    font-family: 'Anton', sans-serif;
+    font-size: 2rem;
+    color: var(--primaria);
+    font-weight: 300;
+    margin: 24px auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2,
+h3{
+    color: var(--primaria);
+    margin: 24px auto 16px auto;
+    width: fit-content;
+}
+h2{
+    font-size: 1.25rem;
+}
+h3{
+    font-size: 1.1rem;
+}
+p{
+    color: #222222;
+    line-height: 24px;
+    margin: 8px auto;
+}
+
+header img{
+    animation: bordaCamaleao 4s infinite;
+    border: 2px solid var(--primaria);
+    border-radius: 50%;
+    filter: drop-shadow(2px 2px 4px var(--bg2));
+    height: 96px;
+    width: 96px;
+    transition: transform .8s ease-in-out;
+
+}
+header img:hover {
+    transform: rotateY(360deg);
+}
+
+
+header,
+aside,
+main,
+section,
+article,
+div,
+footer{
+    padding: var(--padding)
+}
+header,
+footer{
+    background-color: var(--bg1);
+    border: 2px solid black;
+    
+}
+
 header > a {
-    display: block;
+    display: inline-block;
 }
 
 ul,
 ol {
     list-style: none;
 }
-
+#habilidades article{
+    background-color: var(--bg1);
+    display:inline-block;
+    min-width: calc(50% - 80px);
+    vertical-align: top;
+    min-height: 190px;
+}
 .ano {
     font-style: italic;
     display: block;
@@ -33,12 +107,21 @@ ol {
     margin-bottom: 16px;
     padding: 24px;
     text-transform: none ;
+    padding: var(--padding);
 }
+@keyframes bordaCamaleao {
+    0%{
+        border: 2px solid red
+    }
+    25%{
+        border: 2px solid yellow
+    }
+    75%{
+        border: 2px solid green
+    }
+    100%{
+        border: 2px solid blue
+    }
 
-[class*="-item"]:first-child {
-    background-color: rgba(245, 155, 10, 0.2);
-  }
-  
-[class*="-item"]:last-child {
-    background-color: rgba(245, 155, 10, 0.2);
-  }
+    
+}
