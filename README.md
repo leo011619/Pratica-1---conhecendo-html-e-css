@@ -1,1 +1,3 @@
-# Pratica-1---conhecendo-html-e-css
+# Prática 1 - conehcendo html e css
+
+Primeiro modelo de currículo online
